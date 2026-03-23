@@ -31,7 +31,7 @@ appwrap run firefox:latest --display vnc --age-key ./keys/appwrap-age-key.txt
 ### Install
 
 ```bash
-git clone https://github.com/theencryptedafro/appwrap.git
+git clone https://github.com/AES256Afro/appwrap.git
 cd appwrap
 go build -o appwrap.exe .
 ```
