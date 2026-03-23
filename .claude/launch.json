@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "appwrap-web",
+      "runtimeExecutable": "C:\\Users\\chris\\My project\\appwrap\\appwrap.exe",
+      "runtimeArgs": ["serve", "-p", "8080"],
+      "port": 8080
+    }
+  ]
+}

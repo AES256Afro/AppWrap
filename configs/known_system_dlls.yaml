@@ -1,0 +1,139 @@
+# Windows system DLLs that should NOT be copied into containers.
+# These are provided by the OS or base container image.
+# Organized by subsystem for clarity.
+
+# Core kernel / NT
+- ntdll.dll
+- kernel32.dll
+- kernelbase.dll
+- advapi32.dll
+- sechost.dll
+- rpcrt4.dll
+- bcrypt.dll
+- bcryptprimitives.dll
+- cfgmgr32.dll
+- ucrtbase.dll
+- msvcrt.dll
+- api-ms-win-crt-runtime-l1-1-0.dll
+- api-ms-win-crt-heap-l1-1-0.dll
+- api-ms-win-crt-string-l1-1-0.dll
+- api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-math-l1-1-0.dll
+- api-ms-win-crt-locale-l1-1-0.dll
+- api-ms-win-crt-time-l1-1-0.dll
+- api-ms-win-crt-convert-l1-1-0.dll
+- api-ms-win-crt-environment-l1-1-0.dll
+- api-ms-win-crt-filesystem-l1-1-0.dll
+- api-ms-win-crt-process-l1-1-0.dll
+- api-ms-win-crt-utility-l1-1-0.dll
+- api-ms-win-crt-multibyte-l1-1-0.dll
+- api-ms-win-core-synch-l1-1-0.dll
+- api-ms-win-core-synch-l1-2-0.dll
+- api-ms-win-core-processthreads-l1-1-0.dll
+- api-ms-win-core-processthreads-l1-1-1.dll
+- api-ms-win-core-heap-l1-1-0.dll
+- api-ms-win-core-heap-l2-1-0.dll
+- api-ms-win-core-string-l1-1-0.dll
+- api-ms-win-core-libraryloader-l1-2-0.dll
+- api-ms-win-core-file-l1-1-0.dll
+- api-ms-win-core-file-l1-2-0.dll
+- api-ms-win-core-file-l2-1-0.dll
+- api-ms-win-core-handle-l1-1-0.dll
+- api-ms-win-core-errorhandling-l1-1-0.dll
+- api-ms-win-core-memory-l1-1-0.dll
+- api-ms-win-core-profile-l1-1-0.dll
+- api-ms-win-core-sysinfo-l1-1-0.dll
+- api-ms-win-core-console-l1-1-0.dll
+- api-ms-win-core-debug-l1-1-0.dll
+- api-ms-win-core-rtlsupport-l1-1-0.dll
+- api-ms-win-core-interlocked-l1-1-0.dll
+- api-ms-win-core-localization-l1-2-0.dll
+- api-ms-win-core-timezone-l1-1-0.dll
+- api-ms-win-core-datetime-l1-1-0.dll
+- api-ms-win-core-registry-l1-1-0.dll
+- api-ms-win-core-com-l1-1-0.dll
+- api-ms-win-core-winrt-l1-1-0.dll
+- api-ms-win-core-namedpipe-l1-1-0.dll
+- api-ms-win-core-io-l1-1-0.dll
+- api-ms-win-core-path-l1-1-0.dll
+- api-ms-win-security-base-l1-1-0.dll
+
+# User interface
+- user32.dll
+- gdi32.dll
+- gdi32full.dll
+- win32u.dll
+- comctl32.dll
+- comdlg32.dll
+- shell32.dll
+- shlwapi.dll
+- uxtheme.dll
+- dwmapi.dll
+- imm32.dll
+- msctf.dll
+- usp10.dll
+
+# Graphics / DirectX
+- d3d9.dll
+- d3d10.dll
+- d3d11.dll
+- d3d12.dll
+- dxgi.dll
+- d3dcompiler_47.dll
+- d2d1.dll
+- dwrite.dll
+- opengl32.dll
+
+# COM / OLE
+- ole32.dll
+- oleaut32.dll
+- combase.dll
+- propsys.dll
+- shcore.dll
+
+# Networking
+- ws2_32.dll
+- winhttp.dll
+- wininet.dll
+- urlmon.dll
+- dnsapi.dll
+- iphlpapi.dll
+- mswsock.dll
+- secur32.dll
+- sspicli.dll
+- schannel.dll
+- crypt32.dll
+- cryptsp.dll
+- wintrust.dll
+- netapi32.dll
+- nsi.dll
+
+# Multimedia
+- winmm.dll
+- mmdevapi.dll
+- avrt.dll
+
+# WinRT / Modern
+- combase.dll
+- windowscodecs.dll
+- mfplat.dll
+
+# Power / System
+- powrprof.dll
+- setupapi.dll
+- version.dll
+- wtsapi32.dll
+- userenv.dll
+- profapi.dll
+- wldp.dll
+
+# Misc system
+- dbghelp.dll
+- psapi.dll
+- normaliz.dll
+- mpr.dll
+- winspool.drv
+- cabinet.dll
+- imagehlp.dll
+- cryptbase.dll
+- clbcatq.dll
