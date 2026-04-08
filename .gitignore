@@ -20,3 +20,12 @@ PLAN.md
 
 # Python logo generator cache
 __pycache__/
+
+# IDE/AI agent caches - prevent secret leakage
+.claude/
+.codex/
+.copilot/
+.cursor/
+.gemini/
+.antigravity/
+
