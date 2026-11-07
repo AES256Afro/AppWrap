@@ -1,4 +1,5 @@
 import math
+import os
 from PIL import Image, ImageDraw, ImageFont
 
 W, H = 1200, 1200
@@ -23,7 +24,7 @@ DOCKER_BLUE_DARK = (20, 100, 165)
 CIRCUIT_BLUE = (36, 150, 220, 160)
 TEXT_DARK = (35, 40, 50)
 
-FONT_DIR = r"C:\Users\user\AppData\Roaming\Claude\local-agent-mode-sessions\skills-plugin\a2028460-04f6-49c8-93a4-bedbfbc00961\8e9a6ae3-18d9-4f14-b7d4-3a9063bc2af8\skills\canvas-design\canvas-fonts"
+FONT_DIR = os.environ.get("APPWRAP_FONT_DIR", "fonts")
 
 
 def organic_shape(cx, cy, rx_base, ry_base, offset_angle=0, detail=2):
@@ -303,7 +304,7 @@ for d in [draw, draw_white]:
     draw_text(d)
 
 # Save
-output_dir = r"C:\Users\user\My project\appwrap"
+output_dir = os.path.dirname(os.path.abspath(__file__))
 img.save(f"{output_dir}/appwrap-logo.png", "PNG")
 img_white.save(f"{output_dir}/appwrap-logo-white.png", "PNG")
 print(f"Saved: {output_dir}/appwrap-logo.png")
